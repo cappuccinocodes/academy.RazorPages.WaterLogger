@@ -7,9 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Data\" />
+    <None Remove="Microsoft.Data.Sqlite" />
+    <None Remove="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\img\" />
   </ItemGroup>
 </Project>
